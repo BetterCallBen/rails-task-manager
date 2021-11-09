@@ -1,0 +1,105 @@
+body {
+  background: linear-gradient(white, rgb(180, 180, 180));
+  height: 100vh;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn > a {
+  border-radius: 16px;
+  padding: 5px 10px;
+}
+.delete > a {
+  border: 1px solid red;
+  color: red;
+}
+.back > a {
+  border: 1px solid grey;
+  color: grey;
+}
+.edit > a  {
+  border: 1px solid blue;
+  color: blue;
+}
+.task > a {
+  color: rgb(190, 190, 190);
+  &:hover {
+    color: grey;
+  }
+}
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 300px;
+  border-radius: 20px;
+  border: 2px solid rgb(185, 185, 185);
+  background-color: rgb(235, 235, 235);
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  width: 600px;
+  height: 400px;
+  margin: 50px auto;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.253);
+  position: relative;
+}
+.jc-center {
+  justify-content: center;
+}
+.links {
+  border-top: 1px solid rgb(73, 73, 73);
+  padding-top: 30px;
+}
+
+form {
+  margin-top: 10px;
+  width: 100%;
+}
+input {
+  width: 99%;
+  margin: 5px auto;
+}
+
+.form-group {
+  margin: 15px 10px;
+}
+#task_title {
+  height: 20px;
+}
+#task_details {
+  height: 40px;
+}
+.check-box > input {
+  width: auto;
+}
+.btn > input {
+  border-radius: 16px;
+}
+.submit > input{
+  border: 1px solid grey;
+  padding: 10px 20px;
+  width: 100%;
+  &:hover {
+    background-color: rgb(179, 179, 179);
+    border: 1px solid rgb(82, 82, 82);
+  }
+}
+.bd {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+}

@@ -1,0 +1,12 @@
+<h1 class="text-align-center">My tasks</h1>
+<div class="container jc-center">
+  <% @tasks.each do |task| %>
+    <% if task.completed == true %>
+      <h2 class="task"><%= link_to task.title, task_path(task)%> [X]</h2>
+    <% else %>
+      <h2 class="task"><%= link_to task.title, task_path(task)%></h2>
+    <% end %>
+  <% end %>
+  <span class="btn edit bd"><%= link_to "add a new task", new_task_path%></span>
+
+</div>
